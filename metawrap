@@ -1,10 +1,7 @@
-metawrap read_qc -1 $i/*_1.fastq -2 $i/*_2.fastq -o $i/qc -t 20 -x ${host}
-ln -s $i/qc/final_pure_reads_1.fastq $i/final_pure_reads_1.fastq
-ln -s $i/qc/final_pure_reads_2.fastq $i/final_pure_reads_2.fastq
-metawrap read_qc -1 $i/final_pure_reads_1.fastq -2 $i/final_pure_reads_2.fastq -o $i/qc2 -t 20 -x wheat2 --skip-trimming --skip-pre-qc-report --skip-post-qc-report 
+metawrap read_qc -1 $i/*_1.fastq -2 $i/*_2.fastq -o $i/qc -t ${threads} -x ${host}
 
 metawrap binning -o $i/bin -t 60 -a $i/assembly/final_assembly.fasta --metabat2 --maxbin2 --concoct $i/final*fastq
 
-metawrap bin_refinement -o $i/bin_refinement -t 60 -A $i/bin/concoct_bins/ -B $i/bin/maxbin2_bins/ -C $i/bin/metabat2_bins/  -c 80
+metawrap bin_refinement -o $i/bin_refinement -t ${threads} -A $i/bin/concoct_bins/ -B $i/bin/maxbin2_bins/ -C $i/bin/metabat2_bins/  -c ${complete}
 
-metawrap reassemble_bins -o $i/bin_reassembly -1 $i/final_pure_reads_1.fastq -2 $i/final_pure_reads_2.fastq -t 60 -m 300  -b $i/bin_refinement/metawrap_80_10_bins 
+metawrap reassemble_bins -o $i/bin_reassembly -1 $i/final_pure_reads_1.fastq -2 $i/final_pure_reads_2.fastq -t ${threads} -m 300  -b $i/bin_refinement/metawrap_${complete}_10_bins 
