@@ -1,0 +1,1 @@
+comparem aai_wf --cpus ${threads} {input}  {output}
