@@ -1,0 +1,35 @@
+# S1 import 16S forward and reverse sequences
+vim forward.fa 
+vim reverse.fa 
+
+# S2 split the files
+seqkit split -i forward.fa 
+seqkit split -i reverse.fa 
+# S3 rename the splits
+rename "forward.part_" "" *
+rename "reverse.part_" "" *
+# S4 combine the paired ends
+for i in `ls`;do mkdir ../../02comb/${i%%.fa}; cat $i >> ../../02comb/${i%%.fa}/$i; cat ../reverse.fa.split/$i >> ../../02comb/${i%%.fa}/$i; done
+# S5 merge the paired-ends
+for i in `ls`;do cap3 $i/${i}.fa; done
+## extract the *.fa.cap.contigs
+# S6 merge the contigs
+mkdir ../03final
+## need a python script to combined them
+
+import os
+files = os.listdir()
+f1 = open("../03final/combined.fa","w")
+for file in files:
+  with open(file + "/" + file + ".fa.cap.contigs") as f_r:
+    for line in f_r:
+      if line.startswith(">"):
+        f1.write(">" + str(file) + '\n')
+      else:
+        f1.write(line)
+
+
+
+# S7 taxonomy
+vsearch --usearch_global full_1127_1209.fa --db ../../../../silva/SILVA_138.2_SSURef_NR99_tax_silva.fasta --id 0.97 --blast6out results.b6 --strand both --top_hits_only
+  
