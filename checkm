@@ -1,1 +1,2 @@
 checkm lineage_wf -t 8 -x fa /home/donovan/bins /home/donovan/checkm
+comparem aai_wf --cpus ${threads} {input}  {output}
