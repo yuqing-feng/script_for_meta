@@ -1,5 +1,14 @@
 # binning
 metabat2 concoct maxbin2 metabinner
 # refinement
-metawrap 
+metawrap MAGScoT das_tool
+# abundance
+fairy metawrap converM salmon
+# taxonomy
+gtdbtk CAT
+#  metabolic
+METABOLIC gapseq
+# transmission
+SynTracker inStrain
+
 
