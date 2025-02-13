@@ -1,0 +1,74 @@
+# test of binning
+# semibin2_depth_with_bam
+# 99888
+SemiBin_0       94.04   0.19
+SemiBin_1       85.74   1.6 
+SemiBin_10      86.8    4.91
+SemiBin_14      84.32   1.65
+SemiBin_3       99.95   4.37
+
+# semibin2_depth_no_bam 
+# 99888
+SemiBin_0       94.04   0.19
+SemiBin_1       85.74   1.6 
+SemiBin_10      86.8    4.91
+SemiBin_14      80.05   0.81
+SemiBin_3       99.96   4.37
+
+# semibin2 default parameter
+# 998887
+SemiBin_0       94.2    2.13
+SemiBin_1       86.09   0.61
+SemiBin_15      82.46   1.09
+SemiBin_3       99.95   2.62
+SemiBin_39      73.67   3.1
+SemiBin_9       80.56   4.21
+
+# metabat
+# 987777
+metabat.11      74.74   0.04
+metabat.16      71.61   5.92
+metabat.18      72.59   3.57
+metabat.19      84.5    1.47
+metabat.5       78.28   7.51
+metabat.8       99.91   2.36
+
+# metadecoder
+# 99877
+metadecoder.1   94.1    0.2
+metadecoder.13  77.73   3.3
+metadecoder.2   87.39   1.9
+metadecoder.4   99.95   2.62
+metadecoder.9   78.38   0.3
+
+# refinement of 4 bin sets (metabat2, metadecoder, vamb and semibat2) using magscot
+# 99877
+test_000001     99.91   2.36
+test_000002     94.1    0.2
+test_000003     77.9    3.28
+test_000005     86.02   1.43
+test_000006     78.91   3.79
+
+#  refinement of 2 bin sets (metabat2, metadecoder) using magscot
+# 99877
+2bins_cleanbin_000001   99.91   2.36
+2bins_cleanbin_000002   94.1    0.2
+2bins_cleanbin_000003   77.9    3.28
+2bins_cleanbin_000005   85.07   1.47
+2bins_cleanbin_000006   72.32   3.53
+
+# refinement of 3 bin sets (metabat2, metadecoder, vamb) using magscot
+# 99877
+3bins_cleanbin_000001   99.91   2.36
+3bins_cleanbin_000002   94.1    0.2
+3bins_cleanbin_000003   77.9    3.28
+3bins_cleanbin_000005   85.07   1.47
+3bins_cleanbin_000006   72.32   3.53
+
+# refinement of 3 bin sets (metabat2, metadecoder, semibin2) usign magscot
+# 99877
+3bins_vamb_cleanbin_000001      99.91   2.36
+3bins_vamb_cleanbin_000002      94.1    0.2
+3bins_vamb_cleanbin_000003      77.9    3.28
+3bins_vamb_cleanbin_000005      86.02   1.43
+3bins_vamb_cleanbin_000006      78.91   3.79
