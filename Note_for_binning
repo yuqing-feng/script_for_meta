@@ -17,3 +17,5 @@ SynTracker inStrain
 metaFlye （metaFlye: scalable long-read metagenome assembly using repeat graphs， nature methods, 2020)
 hifiasm-meta (Metagenome assembly of high-fidelity long reads with hifiasm-meta, nature methods, 2022)
 metaMDBG（High-quality metagenome assembly from long accurate reads with metaMDBG， 2024 NBT）
+# binning
+comebin metabinner BASALT
