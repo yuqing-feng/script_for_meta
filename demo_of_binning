@@ -1,3 +1,20 @@
+
+# Using one thread on one sample,
+# The runtime of each binning method
+
+# metadecoder
+3 steps: 18m30s
+# metabat 
+2 steps: 1m30s (core) + 1m (depth) = 2m30s
+# semibin2
+2 steps: 15m30.070s (core) + 1m (depth) = 16m30s
+# refinement methods
+MAGScoT > DAS_tool > bin_refinement
+
+# In summary, if we just apply one binning method in our analysis, we can choose metabat2 (fastest), metadecoder/semibin2 for more HQMAGs
+# metabat2+metadecoder+semibin2 > MAGScoT
+
+
 # test of binning
 # semibin2_depth_with_bam
 # 99888
