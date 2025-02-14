@@ -19,3 +19,10 @@ hifiasm-meta (Metagenome assembly of high-fidelity long reads with hifiasm-meta,
 metaMDBG（High-quality metagenome assembly from long accurate reads with metaMDBG， 2024 NBT）
 # binning
 comebin metabinner BASALT
+
+# virus
+Phables: from fragmented assemblies to high-quality bacteriophage genomes， 2023 bioinformatics
+vRhyme enables binning of viral genomes from metagenomes， nar，2022
+CoCoNet: an efficient deep learning tool for viral metagenome binning. Bioinformatics  2021
+Genome binning of viral entities from bulk metagenomics data. Nat Commun  2022;13:965.
+ViralCC retrieves complete viral genomes and virus-host pairs from metagenomic hi-C data. Nat Commun  2023;14:502.
