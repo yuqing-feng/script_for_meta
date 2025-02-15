@@ -26,3 +26,6 @@ vRhyme enables binning of viral genomes from metagenomes， nar，2022
 CoCoNet: an efficient deep learning tool for viral metagenome binning. Bioinformatics  2021
 Genome binning of viral entities from bulk metagenomics data. Nat Commun  2022;13:965.
 ViralCC retrieves complete viral genomes and virus-host pairs from metagenomic hi-C data. Nat Commun  2023;14:502.
+
+# remove euk sequences
+tiara and eukrep
