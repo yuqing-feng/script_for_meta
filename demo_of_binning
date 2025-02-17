@@ -2,6 +2,16 @@
 # Using one thread on one sample,
 # The runtime of each binning method
 
+# comebin
+1 thread 48h 
+Name    Completeness
+0       95.18   0.2
+105     95.58   1.51
+1440    94.19   4.05
+391     99.97   2.93
+4499    80.14   1.59
+677     87.72   7.04
+
 # metadecoder
 3 steps: 18m30s
 # metabat 
