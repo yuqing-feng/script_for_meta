@@ -1,7 +1,8 @@
 
 # Using one thread on one sample,
 # The runtime of each binning method
-
+# for binning with solo software, we should following the order.
+COMEBin > metadecoder > seminbin2
 # comebin
 1 thread 48h 
 Name    Completeness
