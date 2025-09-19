@@ -1,0 +1,16 @@
+# phastest
+1. Download PHASTEST docker image and docker database above
+
+2. Unzip the PHASTEST docker image
+
+3. Move content of docker database file to the "/path/to/dockerfile/phastest-app-docker/DB" directory
+
+4. docker build -t phastest:local .
+
+5. Run container with "docker compose run phastest -i genbank -a {genbank_accession}" if input file is genbank accession
+
+6. Run container with "docker compose run phastest -i fasta -s {input_file.fna}" if input file is FASTA sequence
+
+7. Run container with "docker compose run phastest -i contig -s {input_file.fna}" if input file is metagenomic contig
+
+8. For more details, run "docker compose run phastest help"
